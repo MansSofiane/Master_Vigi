@@ -1,0 +1,21 @@
+Options +MultiViews
+
+
+
+RewriteEngine on
+
+
+RewriteRule ^Excel/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ xlsg.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-P/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ xlsgag.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-PD/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ xlsgagd.php?row=$1&row1=$2&row2=$3&row3=$4
+
+RewriteRule ^Excel-G/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$  axlsg.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-GP/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$  axlsgag.php?row=$1&row1=$2&row2=$3&row3=$4
+
+RewriteRule ^Excel-D/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ dxlsg.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-S/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ sxlsg.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^Excel-M/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$  axlsm.php?row=$1&row1=$2
+
+RewriteRule ^Excelcaisse/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ xlscaisse.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^DExcelcaisse/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ dxlscaisse.php?row=$1&row1=$2&row2=$3&row3=$4
+RewriteRule ^SExcelcaisse/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)/([-a-z0-9A-Z]+)$ sxlscaisse.php?row=$1&row1=$2&row2=$3&row3=$4&row4=$5
